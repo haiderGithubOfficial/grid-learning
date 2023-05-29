@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  -->
+    <section>
+      <div>
+        <h2>display: grid</h2>
+      </div>
+      <div class="border-box">
+        <div class="container1">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>display: inline-grid</h2>
+      </div>
+      <div class="border-box">
+        <div class="container2">
+          <div class=" ">1</div>
+          <div class=" ">2nd is the best</div>
+          <div class=" ">3</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Explicit-Grid</h2>
+        <p>grid-template-rows: 50px 100px</p>
+      </div>
+      <div class="border-box">
+        <div class="container3">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Explicit-Grid</h2>
+        <p>grid-template-columns: 90px 50px 120px</p>
+      </div>
+      <div class="border-box">
+        <div class="container4">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Explicit-Grid</h2>
+        <p>grid-template-columns: 1fr 1fr 2fr</p>
+      </div>
+      <div class="border-box">
+        <div class="container5">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Explicit-Grid</h2>
+        <p>grid-template-columns: 3rem 25% 1fr 2fr</p>
+        <p>1fr = ((width of grid) - (3rem) - (25% of width of grid)) / 3</p>
+      </div>
+      <div class="border-box">
+        <div class="container6">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Minimum and Maxumum Grid Track Sizes</h2>
+        <p>
+          grid-template-rows: minmax(100px, auto);<br />
+          grid-template-columns: minmax(auto, 50%) 1fr 3em;
+        </p>
+
+        >
+      </div>
+      <div class="border-box">
+        <div class="container7">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">
+            4. This item has more content than the others and is intentionally,
+            unnecessarily, superfluously, uselessly, and annoyingly verbose for
+            the sake of example. This item has more content than the others and
+            is intentionally, unnecessarily, superfluously, uselessly, and
+            annoyingly verbose for the sake of example. This item has more
+            content than the others and is intentionally, unnecessarily,
+            superfluously, uselessly, and annoyingly verbose for the sake of
+            example.
+          </div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section>
+      <div>
+        <h2>Repeating Grid Tracks</h2>
+        <p>
+          grid-template-rows: repeat(4, 100px);<br />
+          grid-template-columns: repeat(3, 1fr);
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container8">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+          <div class=" ">7</div>
+          <div class=" ">8</div>
+          <div class=" ">9</div>
+          <div class=" ">10</div>
+          <div class=" ">11</div>
+          <div class=" ">12</div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section>
+      <div>
+        <h2>Repeating Grid Tracks</h2>
+        <p>grid-template-columns: 30px repeat(3, 1fr) 30px</p>
+      </div>
+      <div class="border-box">
+        <div class="container9">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+          <div class=" ">7</div>
+          <div class=" ">8</div>
+          <div class=" ">9</div>
+          <div class=" ">10</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Grid Gaps (Gutters)</h2>
+        <p>
+          grid-row-gap: 20px; <br />
+          grid-column-gap: 5rem;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container10">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Grid Gaps (Gutters)</h2>
+        <p>grid-gap: 100px 1em</p>
+      </div>
+      <div class="border-box">
+        <div class="container11">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Grid Gaps (Gutters)</h2>
+        <p>grid-gap: 2em</p>
+      </div>
+      <div class="border-box">
+        <div class="container12">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section>
+      <div>
+        <h2>Positioning Items by Grid Line Numbers</h2>
+        <p>
+          grid-row-start: 2;<br />
+          grid-row-end: 3;<br />
+          grid-column-start: 2;<br />
+          grid-column-end: 3;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container13">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section>
+      <div>
+        <h2>Positioning Items by Grid Line Numbers</h2>
+        <p>
+          grid-row: 2;<br />
+          grid-column: 3 / 4;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container14">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section>
+      <div>
+        <h2>Positioning Items by Grid Line Numbers</h2>
+        <p>grid-area: 2 / 2 / 3 / 3</p>
+        <span
+          >grid-area is shorthand for grid-row-start, grid-column-start,
+          grid-row-end and grid-column-end.</span
+        >
+      </div>
+      <div class="border-box">
+        <div class="container15">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section>
+      <div>
+        <h2>Spanning Items Across Rows and Columns</h2>
+        <p>
+          grid-column-start: 1; <br />
+          grid-column-end: 4;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container16">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Spanning Items Across Rows and Columns</h2>
+        <p>
+          grid-row-start: 1; <br />
+          grid-row-end: 4;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container17">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+          <div class=" ">7</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Spanning Items Across Rows and Columns</h2>
+        <p>
+          grid-row: 2 / 5; <br />
+          grid-column: 2 / 4;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container18">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+          <div class=" ">7</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Spanning Items Across Rows and Columns</h2>
+        <p>
+          grid-row: 2 / span 3; <br />
+          grid-column: span 2;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container19">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+          <div class=" ">7</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Naming Grid Lines</h2>
+        <p>
+          grid-template-rows: [row-1-start] 1fr [row-2-start] 1fr [row-2-end];
+          <br />
+          grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr
+          [col-3-start] 1fr [col-3-end];
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container20">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Naming Grid Lines</h2>
+        <p>
+          grid-template-rows: [row-start row-1-start] 1fr [row-1-end
+          row-2-start] 1fr [row-2-end row-end];<br />
+          grid-template-columns: [col-start] 1fr [col-2-start] 1fr [col-3-start]
+          1fr [col-end];
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container21">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Positioning Items by Line Names</h2>
+        <p>
+          grid-row-start: row-2-start;<br />
+          grid-row-end: row-end;<br />
+          grid-column-start: col-2-start;<br />
+          grid-column-end: col-end;<br />
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container22">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Positioning Items by Line Names</h2>
+        <p>
+          grid-row: row-2-start / row-end; <br />
+          grid-column: col-2-start / col-end;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container23">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Naming and Positioning Items by Grid Lines with the Same Name</h2>
+        <p>
+          grid-template-rows: repeat(3, [row-start] 1fr [row-end]); <br />
+          grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container24">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+          <div class=" ">7</div>
+          <div class=" ">8</div>
+          <div class=" ">9</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Naming and Positioning Items by Grid Lines with the Same Name</h2>
+        <p>
+          grid-row: row-start 2 / row-end 3; <br />
+          grid-column: col-start / col-start 3;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container25">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Naming and Positioning Items by Grid Lines with the Same Name</h2>
+        <p>
+          grid-template-areas: "header header"
+          <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"content
+          sidebar"
+          <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"footer
+          footer"; <br />
+          grid-template-rows: 150px 1fr 100px;<br />
+          grid-template-columns: 1fr 200px;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container26">
+          <div class=" "><span>header</span></div>
+          <div class=" "><span>header</span></div>
+          <div class=" "><span>content</span></div>
+          <div class=" "><span>sidebar</span></div>
+          <div class=" "><span>footer</span></div>
+          <div class=" "><span>footer</span></div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Naming and Positioning Items by Grid Lines with the Same Name</h2>
+        <p>
+          grid-row: header / header; <br />
+          grid-column: header / header;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container27">
+          <div class=" ">header</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Naming and Positioning Items by Grid Lines with the Same Name</h2>
+        <p>grid-area: header / header / header / header;</p>
+        <p>grid-area: content / content / content / content;</p>
+        <p>grid-area: sidebar / sidebar / sidebar / sidebar;</p>
+        <p>grid-area: footer / footer / footer / footer;</p>
+      </div>
+      <div class="border-box">
+        <div class="container28">
+          <div class=" ">header</div>
+          <div class=" ">content</div>
+          <div class=" ">sidebar</div>
+          <div class=" ">footer</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Implicit Grid</h2>
+        <p>
+          grid-template-rows: 100px; // explicit grid-items <br />
+          grid-template-columns: repeat(2, 1fr); <br />
+          grid-auto-rows: 150px; //Implicit grid-items<br />
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container29">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section>
+      <div>
+        <h2>Implicit Grid</h2>
+        <p>grid-auto-flow: row; // by default grid</p>
+      </div>
+      <div class="border-box">
+        <div class="container30">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Implicit Grid</h2>
+        <p>grid-auto-flow: column;</p>
+      </div>
+      <div class="border-box">
+        <div class="container31">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Implicit Grid</h2>
+        <p>
+          grid-template-columns: 30px 60px; <br />
+          grid-auto-flow: column; <br />
+          grid-auto-columns: 1fr 2fr 3fr;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container32">
+          <div class=" ">1</div>
+          <div class=" ">2</div>
+          <div class=" ">3</div>
+          <div class=" ">4</div>
+          <div class=" ">5</div>
+          <div class=" ">6</div>
+          <div class=" ">7</div>
+          <div class=" ">8</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Implicitly Named Grid Areas</h2>
+        <p>
+          grid-template-rows: [outer-start] 1fr [inner-start] 1fr [inner-end]
+          1fr [outer-end]; <br />
+          grid-template-columns: [outer-start] 1fr [inner-start] 1fr [inner-end]
+          1fr [outer-end];
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container33">
+          <div>inner</div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Implicitly Named Grid Lines</h2>
+        <p>
+          grid-template-areas: "header header"
+          <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"content
+          sidebar"
+          <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"footer
+          footer"; <br />
+          grid-template-rows: 150px 1fr 100px;<br />
+          grid-template-columns: 1fr 200px;
+        </p>
+      </div>
+      <div class="border-box">
+        <div class="container34">
+          <div class=" "><span>header</span></div>
+          <div class=" "><span>header</span></div>
+          <div class=" "><span>content</span></div>
+          <div class=" "><span>sidebar</span></div>
+          <div class=" "><span>footer</span></div>
+          <div class=" "><span>footer</span></div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section>
+      <div>
+        <h2>Implicitly Named Grid Lines</h2>
+        <p>grid-area: header-start / header-start / header-end / header-end;</p>
+        <p>
+          grid-area: content-start / content-start / content-end / content-end;
+        </p>
+        <p>
+          grid-area: sidebar-start / sidebar-start / header-end / footer-end;
+        </p>
+        <p>grid-area: content-end / header-start / footer-end / sidebar-end;</p>
+      </div>
+      <div class="border-box">
+        <div class="container35">
+          <div class=" ">header</div>
+          <div class=" ">content</div>
+          <div class=" ">sidebar</div>
+          <div class=" ">footer</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
